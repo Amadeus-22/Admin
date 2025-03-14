@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
 </head>
 <body>
-    <h1>Hello Papa</h1>
-    <button id="press-me">Press me</button>
+    <header>
+        <div id="menu">
+            <nav class="nav-buttons">
+                <button> Adicionar </button>
+                <button> Sair </button>
+            </nav>
+        </div>
+    </header>
+    <section class="searchBox">
+        <input id="searchInput" type="search">
+    </section>
+    <section id="searchResults" class="searchResults">
+        <ul class="result-list" id="result-list">
+
+        </ul>
+    </section>
 </body>
 <script src="{% static 'myapp/script.js' %}"></script>
 </html>
